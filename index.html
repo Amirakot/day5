@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+       
+    </style>
+  </head>
+  <body>
+
+    <form  action ="thank.html"  onsubmit="check()">
+    <div>
+        <div class="div">
+        <label for="full-name">fullname</label>
+        <input
+          class="border"
+          type="text"
+          name="text"
+          placeholder="Enter your Name"
+          onfocus="showborder()"
+          onblur="remove()"
+          id="full-name"
+          required
+        />
+        <span id="invalid"></span>
+      </div>
+      <div>
+        <label for="email">your email</label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <div>
+        <label for="select">select city</label>
+        <select name="city" id="city">
+          <option value="alexendria">alexandrai</option>
+          <option value="aswan">aswan</option>
+          <option value="luxor">luxor</option>
+        </select>
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input id="password" type="password" name="password" required />
+      </div>
+      <div>
+        <label for="repassword" > re password</label>
+        <input
+          id="repassword"
+          type="password"
+          name="password"
+          required
+          onblur="checkpassword()"
+        />
+        <span id="validatepassword"> </span>
+      </div>
+      <div>
+        <input id="checkbox" type="checkbox" required />
+        <label for="checkbox">I accept the terms and conditions</label>
+      </div>
+      <input type="submit" value="register" />
+    </div>
+    </form>
+    
+    <script src="main.js"></script>
+    <script>
+       
+    </script>
+  </body>
+</html>
